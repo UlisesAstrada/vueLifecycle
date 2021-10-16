@@ -1,9 +1,9 @@
 const app = new Vue({
   el: '#app',
   data: {
-    title: 'Hola'
+    saludo: 'Vue lifecycle'
   },
-  methods: {
-    
-  },
+  beforeCreate() {
+    console.log('beforeCreate')
+  }
 })
